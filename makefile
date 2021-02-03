@@ -3,6 +3,12 @@
 
 LAMBDA_NAME=swift-lambda-phonenumberkit-example
 
+help:
+	@echo "Usage:"
+	@echo "make install -> will install the required Homebrew package"
+	@echo "make build -> will build the lambda locally"
+	@echo "make deploy -> will build the lambda and upload it to AWS"
+
 install:
 	brew install SPMDestinations/tap/swift-lambda
 
